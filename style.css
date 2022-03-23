@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* ### Primary */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* ### Neutral */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.container {
+  padding: 5rem 1rem;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--very-dark-magenta);
+  font-family: "Spartan", sans-serif;
+  font-size: 0.9375rem;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.5;
+  /* margin-bottom: 1.5rem; */
+}
+
+img {
+  max-width: 100%;
+}
+
+.top-half {
+  margin-bottom: 2rem;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro p {
+  color: var(--dark-grayish-magenta);
+}
+
+.rating-card {
+  background-color: var(--light-grayish-magenta);
+  text-align: center;
+  padding: 1rem;
+  margin-block: 1rem;
+  border-radius: 5px;
+}
+
+.feedback-card {
+  background-color: var(--very-dark-magenta);
+  color: var(--light-grayish-magenta);
+  padding: 1rem;
+  margin-block: 1rem;
+  border-radius: 5px;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.bio img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.title {
+  color: var(--soft-pink);
+}
+
+@media (min-width: 698px) {
+  .container {
+    max-width: 1110px;
+  }
+
+  .top-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    align-items: center;
+  }
+
+  .intro {
+    text-align: left;
+  }
+
+  .reviews {
+    margin-right: 4rem;
+  }
+
+  .report-guru {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .best-tech {
+    margin-left: 4rem;
+  }
+
+  .stars {
+    margin-right: 1rem;
+  }
+
+  .rating-card {
+    display: flex;
+    align-items: center;
+  }
+
+  .feedback {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .irene {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .anne {
+    margin-top: 3rem;
+    margin-bottom: -1em;
+  }
+}
